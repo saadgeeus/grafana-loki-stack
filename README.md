@@ -1,13 +1,15 @@
-📊 Grafana Loki Logging Stack with Promtail & Nginx
+# 📊 Grafana Loki Logging Stack with Promtail & Nginx
 
-This project sets up a logging and monitoring stack using Docker Compose:
-•	Grafana → Visualization
-•	Loki → Log aggregation system
-•	Promtail → Log shipper for collecting logs
-•	Nginx → Sample web server generating logs
+This project sets up a **logging and monitoring stack** using Docker Compose:
 
+- **Grafana** → Visualization  
+- **Loki** → Log aggregation system  
+- **Promtail** → Log shipper for collecting logs  
+- **Nginx** → Sample web server generating logs  
 
-🚀 Project Structure
+---
+
+## 🚀 Project Structure
 grafana-loki-stack/
 ├── docker-compose.yml
 ├── promtail/
