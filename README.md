@@ -52,11 +52,11 @@ docker compose up -d --build
 ---
 
 📌 Services
-- **Service	→ Port	→ Description
-- **Grafana	→ 3000	** →  Visualization UI
-- **Loki	→ 3100	 ** → Log aggregation backend
-- **Promtail → 9080	 ** → Collects logs from Nginx
-- **Nginx	 → 80	 ** → Sample web server
+- **Service**	→ Port	 → Description
+- **Grafana**	→ 3000   → Visualization UI
+- **Loki**	    → 3100	 → Log aggregation backend
+- **Promtail**  → 9080	 → Collects logs from Nginx
+- **Nginx**	    → 80	 → Sample web server
 ---
 
 🔗 Configure Grafana
