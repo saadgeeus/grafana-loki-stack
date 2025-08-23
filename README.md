@@ -10,17 +10,18 @@ This project sets up a **logging and monitoring stack** using Docker Compose:
 ---
 
 ## 🚀 Project Structure
+
 grafana-loki-stack/
 ├── docker-compose.yml
 ├── promtail/
-│   ├── promtail.yml
-│   └── data/
+│ ├── promtail.yml
+│ └── data/
 ├── nginx/
-│   ├── html/
-│   │   └── index.html
-│   └── log/
+│ ├── html/
+│ │ └── index.html
+│ └── log/
 └── grafana/
-    └── data/
+└── data/
 
 ⚙️ Requirements
 •	Docker
