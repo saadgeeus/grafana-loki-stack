@@ -14,7 +14,6 @@ This project sets up a **logging and monitoring stack** using Docker Compose:
 ```bash
 grafana-loki-stack/
 ├── docker-compose.yml
-├── gpg.key
 ├── grafana
 │   └── data
 ├── loki
