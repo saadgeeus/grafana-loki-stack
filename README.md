@@ -42,10 +42,14 @@ Clone this repository:
 ```bash
 git clone https://github.com/saadgeeus/grafana-loki-stack.git
 cd grafana-loki-stack
-
+```
+---
 
 Start the stack:
+```bash
 docker compose up -d --build
+```
+---
 
 📌 Services
 Service	Port	Description
