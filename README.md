@@ -52,30 +52,38 @@ docker compose up -d --build
 ---
 
 📌 Services
+```bash
 Service	Port	Description
 Grafana	3000	Visualization UI
 Loki	3100	Log aggregation backend
 Promtail	9080	Collects logs from Nginx
 Nginx	80	Sample web server
-
+```
+---
 
 🔗 Configure Grafana
+```bash
 1.	Open Grafana → http://localhost:3000
 o	Default login: admin / admin
 2.	Add Loki as Data Source → http://loki:3100
 3.	Go to Explore → Run query:
 {job="nginx"}
-
+```
+---
 
 📊 Dashboards
+```bash
 •	Import Grafana dashboard for Loki logs (ID: 13639) from Grafana.com
-
+```
+---
 🗑️ Cleanup
 To stop and remove containers:
+```bash
 docker compose down -v
+```
+---
 
-
-📌 Notes
-•	Nginx logs are stored in nginx/log/
+3📌 Notes
+- **•	Nginx logs are stored in** → nginx/log/
 •	Promtail scrapes system logs (/var/log/*.log) and Nginx logs
 •	Loki persists logs in /var/lib/loki (inside container, can be volume mounted)
