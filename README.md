@@ -52,21 +52,20 @@ docker compose up -d --build
 ---
 
 📌 Services
-```bash
-Service	Port	Description
-Grafana	3000	Visualization UI
-Loki	3100	Log aggregation backend
-Promtail	9080	Collects logs from Nginx
-Nginx	80	Sample web server
-```
+- **Service	→ Port	→ Description
+- **Grafana	→ 3000	** →  Visualization UI
+- **Loki	→ 3100	 ** → Log aggregation backend
+- **Promtail → 9080	 ** → Collects logs from Nginx
+- **Nginx	 → 80	 ** → Sample web server
 ---
 
 🔗 Configure Grafana
+
+- **Open Grafana ** → http://localhost:3000
+- **Default login: ** → admin / admin
+- **Add Loki as Data Source ** → http://loki:3100
+- **Go to Explore ** → Run query:
 ```bash
-1.	Open Grafana → http://localhost:3000
-o	Default login: admin / admin
-2.	Add Loki as Data Source → http://loki:3100
-3.	Go to Explore → Run query:
 {job="nginx"}
 ```
 ---
@@ -84,6 +83,6 @@ docker compose down -v
 ---
 
 3📌 Notes
-- **•	Nginx logs are stored in** → nginx/log/
-•	Promtail scrapes system logs (/var/log/*.log) and Nginx logs
-•	Loki persists logs in /var/lib/loki (inside container, can be volume mounted)
+- **Nginx logs are stored in** → nginx/log/
+- **Promtail scrapes system logs ** → (/var/log/*.log) and Nginx logs
+- **Loki persists logs in ** → /var/lib/loki (inside container, can be volume mounted)
