@@ -84,3 +84,7 @@ docker compose down -v
 - **Nginx logs are stored in** → nginx/log/
 - **Promtail scrapes system logs** → (/var/log/*.log) and **Nginx** logs
 - **Loki persists logs in** → /var/lib/loki (inside container, can be volume mounted)
+
+---
+**Important**
+- **For This Project I Use CentOS 9 Stream**
