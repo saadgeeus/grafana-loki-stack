@@ -71,9 +71,7 @@ docker compose up -d --build
 ---
 
 📊 Dashboards
-```bash
-•	Import Grafana dashboard for Loki logs (ID: 13639) from Grafana.com
-```
+- Import Grafana dashboard for Loki logs **(ID: 13639)** from **Grafana.com**
 ---
 🗑️ Cleanup
 To stop and remove containers:
@@ -84,5 +82,5 @@ docker compose down -v
 
 3📌 Notes
 - **Nginx logs are stored in** → nginx/log/
-- **Promtail scrapes system logs ** → (/var/log/*.log) and Nginx logs
-- **Loki persists logs in ** → /var/lib/loki (inside container, can be volume mounted)
+- **Promtail scrapes system logs** → (/var/log/*.log) and **Nginx** logs
+- **Loki persists logs in** → /var/lib/loki (inside container, can be volume mounted)
