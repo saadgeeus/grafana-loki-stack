@@ -23,7 +23,7 @@ grafana-loki-stack/
 │   └── log/
 └── grafana/
     └── data/
-
+```
 
 ---
 
