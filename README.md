@@ -23,15 +23,25 @@ grafana-loki-stack/
 └── grafana/
 └── data/
 
-⚙️ Requirements
-•	Docker
-•	Docker Compose
-•	Git
 
-📥 Setup
+---
+
+## ⚙️ Requirements
+
+- Docker  
+- Docker Compose  
+- Git  
+
+---
+
+## 📥 Setup
+
 Clone this repository:
+
+```bash
 git clone https://github.com/saadgeeus/grafana-loki-stack.git
 cd grafana-loki-stack
+
 
 Start the stack:
 docker compose up -d --build
