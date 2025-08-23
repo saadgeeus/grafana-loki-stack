@@ -61,10 +61,10 @@ docker compose up -d --build
 
 🔗 Configure Grafana
 
-- **Open Grafana ** → http://localhost:3000
-- **Default login: ** → admin / admin
-- **Add Loki as Data Source ** → http://loki:3100
-- **Go to Explore ** → Run query:
+- **Open Grafana** → http://localhost:3000
+- **Default login:** → admin / admin
+- **Add Loki as Data Source** → http://loki:3100
+- **Go to Explore** → Run query:
 ```bash
 {job="nginx"}
 ```
