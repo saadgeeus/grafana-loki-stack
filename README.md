@@ -14,15 +14,20 @@ This project sets up a **logging and monitoring stack** using Docker Compose:
 ```bash
 grafana-loki-stack/
 ├── docker-compose.yml
-├── promtail/
-│   ├── promtail.yml
-│   └── data/
-├── nginx/
-│   ├── html/
-│   │   └── index.html
-│   └── log/
-└── grafana/
-    └── data/
+├── gpg.key
+├── grafana
+│   └── data
+├── loki
+│   ├── config.yml
+│   └── data
+├── nginx
+│   ├── html
+│   │   └── index.html
+│   ├── log
+│   └── nginx.conf
+└── promtail
+    ├── data
+    └── promtail.yml
 ```
 
 ---
