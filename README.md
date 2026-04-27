@@ -48,6 +48,15 @@ git clone https://github.com/saadgeeus/grafana-loki-stack.git
 cd grafana-loki-stack
 ```
 ---
+**Install Grafana**
+``` bash
+cd grafana-loki-stack
+chmod +x install_grafana.sh
+./install_grafana.sh
+```
+> it will install and start Grafana Server
+---
+
 
 Start the stack:
 ```bash
