@@ -48,16 +48,26 @@ git clone https://github.com/saadgeeus/grafana-loki-stack.git
 cd grafana-loki-stack
 ```
 ---
-**Install Grafana**
+#### **Install Grafana**
 ``` bash
+# Goto grafana-loki-stack Dir
 cd grafana-loki-stack
+# Give Execute Permission to install_grafana.sh file
 chmod +x install_grafana.sh
+# Now Run This CMD
 ./install_grafana.sh
 ```
 > it will install and start Grafana Server
 ---
-
-
+#### **Install Docker**
+``` bash
+sudo apt update
+# Now install Docker
+sudo apt install docker.io
+# After Installation Add User In Docker Group
+sudo usermod -aG docker $USER && newgrp docker
+```
+---
 Start the stack:
 ```bash
 docker compose up -d --build
